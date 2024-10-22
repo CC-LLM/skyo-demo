@@ -6,7 +6,7 @@ demo of skyo
 - npm init -y
 - npm install express
 
-### 修改js里, skyoUrl地址为skyo server ip和端口, 然后node  server.js
+### 修改public/app.js里的skyoUrl地址为skyo server ip和端口, 然后启动前端: node server.js
 
 ## backend
 
