@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKYO DEMO PLATFORM</title>
+</head>
+<body>
+  <h1>Audio to Audio Demo</h1>
+  <p> 录制一段语音 </p>
+  <button id="start-record">Start Recording</button>
+  <button id="stop-record" disabled>Stop Recording</button>
+  <br>
+  <p> 上传一段语音 </p>
+  <input type="file" id="upload-file" accept="audio/*">
+  <br>
+  <p> 声音输出 </p>
+  <audio id="audio-playback" controls></audio>
+  <div id="play-start-latency">首播延迟: -- 秒</div>
+  <div id="total-play-duration">总播时长: -- 秒</div>
+  <div id="current-play-latency">当前耗时: -- 秒</div>
+  <br>
+  <p> 文字输出 </p>
+  <textarea id="output-text" rows="10" cols="100" readonly placeholder="Processed text will appear here..."></textarea>
+
+  <h1>Text to Text  Demo</h1>
+  <textarea id="input-text-tt" rows="10" cols="100" placeholder="Enter text to send..."></textarea>
+  <button id="send-text-tt">Send Text</button> 
+  <br>
+  <textarea id="output-text-tt" rows="10" cols="100" readonly placeholder="Processed text will appear here..."></textarea>
+
+
+  <h1>TTS  Demo</h1>
+  <textarea id="input-text-tts" rows="10" cols="100" placeholder="Enter text to send..."></textarea>
+  <button id="send-text-tts">Send Text</button>
+  <br>
+  <audio id="audio-playback-tts" controls></audio>
+
+
+  <h1> ASR  Demo</h1>
+  <p> 上传一段语音 </p>
+  <input type="file" id="upload-file-asr" accept="audio/*">
+  <br>
+  <textarea id="output-text-asr" rows="10" cols="100" readonly placeholder="Processed text will appear here..."></textarea>
+  
+  <script type="module" src="app.js">
+  </script>
+</body>
+</html>
