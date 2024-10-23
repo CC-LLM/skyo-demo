@@ -8,5 +8,6 @@ demo of skyo
 
 ### 修改public/app.js里的skyoUrl地址为skyo server ip和端口, 然后启动前端: node server.js
 
-## backend
+## skyo inference backend
+参考 https://github.com/CC-LLM/megatron-lm/commit/830bca16874e383b1c6d6d82a2c8999f967f9312 readme
 
